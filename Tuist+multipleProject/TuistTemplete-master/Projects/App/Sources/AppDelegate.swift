@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import DesignSystem
+import Domain
+//import Repository
+import Presentation
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

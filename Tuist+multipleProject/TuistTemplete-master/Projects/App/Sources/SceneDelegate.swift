@@ -8,8 +8,8 @@
 import UIKit
 import DesignSystem
 import Domain
-import Repository
-import Presantation
+//import Repository
+import Presentation
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
-        let vc = UIViewController()
+        let vc = MyViewController()
         vc.view.backgroundColor = .white
         window.rootViewController = vc
         self.window = window
@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         DesignTest()
         DomainTest()
-        RepositoryTest()
+//        RepositoryTest()
         PresentationTest()
     }
     

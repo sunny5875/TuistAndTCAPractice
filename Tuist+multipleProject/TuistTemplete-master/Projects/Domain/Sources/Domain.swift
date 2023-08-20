@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 public class DomainTest {
     public init() {
         print("DomainTest Success")

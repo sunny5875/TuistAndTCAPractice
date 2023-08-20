@@ -10,6 +10,7 @@ import DesignSystem
 import Domain
 //import Repository
 import Presentation
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -22,16 +23,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
-        let vc = MyViewController()
-        vc.view.backgroundColor = .white
+//        let vc = MyViewController()
+        let vc = UIHostingController(rootView: MyView())
+//        vc.view.backgroundColor = .white
         window.rootViewController = vc
         self.window = window
         window.makeKeyAndVisible()
         
-        DesignTest()
-        DomainTest()
+//        DesignTest()
+//        DomainTest()
 //        RepositoryTest()
-        PresentationTest()
+//        PresentationTest()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
